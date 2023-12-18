@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Wesbite Using Bootstrap</title>
+    <!-- Bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- css style link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- wow js cdn script link  -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- css animation cdn link  -->
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- slick cdn link  -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+
+    <div id=" main">
+        <nav id="navbar_top" class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: #000000;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home"> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#facility">Facility</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#post">Post</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 img mt-lg-5 animate__animated animate__backInLeft">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%"
+                            id="blobSvg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color: rgb(238, 205, 163);"></stop>
+                                    <stop offset="100%" style="stop-color: rgb(239, 98, 159);"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path id="blob" fill="url(#gradient)">
+                                <animate attributeName="d" dur="4000ms" repeatCount="indefinite"
+                                    values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;">
+                                </animate>
+                            </path>
+                        </svg>
+                        <img src="images/bg-img.png" alt="">
+                    </div>
+
+                    <div class="col-lg-6 animate__animated animate__backInRight" id="main-content"
+                        data-wow-duration="2s" data-wow-delay="1s">
+                        <h1><span>STAY</span> SAFE, <span>STAY</span> HEALTHY</h1>
+                        <p>Caring For Your Life</p>
+                        <button class="btn btn-outline-primary fw-bold">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start about section  -->
+        <section class="w-100 h-100 mt-5" id="about">
+            <div class="container">
+                <h1 class="text-center fw-bold wow animate__animated animate__zoomIn">About</h1>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <div class="slick d-flex justify-content-evenly wow animate__animated animate__backInLeft">
+                            <div
+                                class="slick1 text-center d-flex justify-content-center align-items-center flex-column">
+                                <img src="./images/treatment.png" alt="">
+                                <h5>Best</h5>
+                                <h4 class="fw-bold">Treatment</h4>
+                                <p>Lorem ipsum dolor, <br> sit amet consectetur.</p>
+                            </div>
+                            <div
+                                class="slick1 text-center d-flex justify-content-center align-items-center flex-column">
+                                <img src="./images/doctor.png" alt="">
+                                <h5>Best</h5>
+                                <h4 class="fw-bold">Doctors</h4>
+                                <p>Lorem ipsum dolor, <br> sit amet consectetur.</p>
+                            </div>
+                            <div
+                                class="slick1 text-center d-flex justify-content-center align-items-center flex-column">
+                                <img src="./images/emergency.png" alt="">
+                                <h5>Best</h5>
+                                <h4 class="fw-bold">Emergency</h4>
+                                <p>Lorem ipsum dolor,<br> sit amet consectetur.</p>
+                            </div>
+                            <div
+                                class="slick1 text-center d-flex justify-content-center align-items-center flex-column">
+                                <img src="./images/stethoscope.png" alt="">
+                                <h5>Best</h5>
+                                <h4 class="fw-bold">Treatment</h4>
+                                <p>Lorem ipsum dolor,<br> sit amet consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 bg-light w-100 h-25">
+                        <div class="count-area wow animate__animated animate__backInRight" data-diff="100">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="count-area-content">
+                                            <div class="count-icon"><i class="fa-solid fa-bandage"></i></div>
+                                            <div class="count-digit">25</div>
+                                            <div class="count-title">Year Of Experience</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="count-area-content">
+                                            <div class="count-icon"><i class="fa-regular fa-face-smile"></i></div>
+                                            <div class="count-digit">284</div>
+                                            <div class="count-title">Well Smiley Faces</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="count-area-content">
+                                            <div class="count-icon"> <i class="fa-solid fa-heart-pulse"></i></div>
+                                            <div class="count-digit">322</div>
+                                            <div class="count-title">Heart Transparent </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="count-area-content">
+                                            <div class="count-icon"><i class="fa-solid fa-award"></i></div>
+                                            <div class="count-digit">154</div>
+                                            <div class="count-title"> Awards Holded </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about section  -->
+
+        <!-- facility section  -->
+        <div class="facility page2 min-vh-100 min-vw-100 mt-5" id="facility">
+            <div class="container">
+                <h1 class="text-center fw-bold mb-3 wow animate__animated animate__zoomIn">Facility</h1>
+                <div class="box-container d-flex justify-content-center align-items-center flex-wrap">
+                    <div class="box wow animate__animated animate__backInLeft">
+                        <a href="images/img1.jpg"></a>
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                    <div class="box wow animate__animated animate__backInDown">
+                        <a href="images/img2.jpg"></a>
+                        <img src="images/img2.jpg" alt="">
+                    </div>
+                    <div class="box wow animate__animated animate__backInRight">
+                        <a href="images/img-3.webp"></a>
+                        <img src="images/img-3.webp" alt="">
+                    </div>
+                    <div class="box wow animate__animated animate__backInLeft">
+                        <a href="images/img4.jpg"></a>
+                        <img src="images/img4.jpg" alt="">
+                    </div>
+                    <div class="box wow animate__animated animate__backInDown">
+                        <a href="images/img5.jpg"></a>
+                        <img src="images/img5.jpg" alt="">
+                    </div>
+                    <div class="box wow animate__animated animate__backInRight">
+                        <a href="images/img6.jpg"></a>
+                        <img src="images/img6.jpg" alt="">
+                    </div>
+                    <div class="box wow animate__animated animate__backInLeft">
+                        <a href="images/img7.jpg"></a>
+                        <img src="images/img7.jpg" alt="">
+                    </div>
+                    <div class="box wow animate__animated animate__backInRight">
+                        <a href="images/img8.jpg"></a>
+                        <img src="images/img8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of facility section -->
+
+
+        <!-- start of review section  -->
+        <section class="wrapper" id="review">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col text-center mb-3 mt-5">
+                        <h1 class="fw-bold wow animate__animated animate__zoomIn">Review</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card text-dark card-has-bg click-col wow animate__animated animate__fadeInLeft"
+                            style="background-image:url('https://source.unsplash.com/600x900/?tech,street');">
+                            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
+                                alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <div class="card-body">
+                                    <small class="card-meta mb-2">People's Review</small>
+                                    <h5 class="card-title mt-0 "><a class="text-dark"
+                                            herf="https://creativemanner.com">Empowering patients with insights. Smooth
+                                            UI, swift appointment scheduling. Excellent resource.</a></h5>
+                                    <small><i class="far fa-clock"></i> October 15, 2020</small>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="media">
+                                        <img class="mr-3 rounded-circle" src="images/pic1.webp"
+                                            alt="Generic placeholder image" style="max-width:50px; height: 50px;">
+                                        <div class="media-body">
+                                            <h6 class="my-0 text-dark d-block">Meet Padhra</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card text-dark card-has-bg click-col wow animate__animated animate__fadeInDown"
+                            style="background-image:url('https://source.unsplash.com/600x900/?tree,nature');">
+                            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature"
+                                alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <div class="card-body">
+                                    <small class="card-meta mb-2">People's Review</small>
+                                    <h5 class="card-title mt-0 "><a class="text-dark"
+                                            herf="https://creativemanner.com">Efficient appointment booking,
+                                            informative content, reassuring design. A patient-centric online
+                                            experience.</a></h5>
+                                    <small><i class="far fa-clock"></i> July 15, 2021</small>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="media">
+                                        <img class="mr-3 rounded-circle" src="images/pic2.webp"
+                                            alt="Generic placeholder image" style="max-width:50px; height:50px;">
+                                        <div class="media-body">
+                                            <h6 class="my-0 text-dark d-block">Dhruv Soni</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card text-dark card-has-bg click-col wow animate__animated animate__fadeInRight"
+                            style="background-image:url('https://source.unsplash.com/600x900/?computer,design');">
+                            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?computer,design"
+                                alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <div class="card-body">
+                                    <small class="card-meta mb-2">People's Review</small>
+                                    <h5 class="card-title mt-0 "><a class="text-dark"
+                                            herf="https://creativemanner.com">Comprehensive medical resources,
+                                            user-friendly interface, valuable information. Seamless healthcare
+                                            navigation.</a></h5>
+                                    <small><i class="far fa-clock"></i> October 7, 2022</small>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="media">
+                                        <img class="mr-3 rounded-circle" src="images/pic3.webp"
+                                            alt="Generic placeholder image" style="max-width:50px; height:50px;">
+                                        <div class="media-body">
+                                            <h6 class="my-0 text-dark d-block">Neha Sharma</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of review section  -->
+
+
+
+        <!-- start contact section  -->
+        <section id="contact" class="mt-5  wow animate__animated animate__zoomIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center fw-bold mb-4">Contact</h1>
+                    </div>
+                </div>
+                <div class="bg-light">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 p-5 bg-white rounded-3">
+                            <div class="d-flex mb-3 flex-column">
+                                <h1 class="h5 text-capitalize my-4">What service You need ?</h1>
+                                <div class="d-flex flex-wrap">
+                                    <div class="
+                                      d-flex
+                                      flex-wrap
+                                      justify-content-center
+                                      align-items-center
+                                      me-4
+                                    ">
+                                        <input type="checkbox" name="webdev" class="form-check-input m-0 me-3"
+                                            id="webdev" />
+                                        <label for="webdev">Health Care</label>
+                                    </div>
+                                    <div class="
+                                      d-flex
+                                      flex-wrap
+                                      justify-content-center
+                                      align-items-center
+                                      me-4
+                                    ">
+                                        <input type="checkbox" name="webdes" class="form-check-input m-0 me-3"
+                                            id="webdes" />
+                                        <label for="webdes">Medicines</label>
+                                    </div>
+                                    <div class="
+                                      d-flex
+                                      flex-wrap
+                                      justify-content-center
+                                      align-items-center
+                                      me-4
+                                    ">
+                                        <input type="checkbox" name="logodes" class="form-check-input m-0 me-3"
+                                            id="logodes" />
+                                        <label for="logodes">Surgery</label>
+                                    </div>
+                                    <div class="
+                                      d-flex
+                                      flex-wrap
+                                      justify-content-center
+                                      align-items-center
+                                      me-4
+                                    ">
+                                        <input type="checkbox" name="others" class="form-check-input m-0 me-3"
+                                            id="others" />
+                                        <label for="others"> Others </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="row mb-3">
+                                <div class="col-md-6 p-3">
+                                    <input required placeholder="first name" type="text" name="" id="" />
+                                </div>
+                                <div class="col-md-6 p-3">
+                                    <input required placeholder="last name" type="text" name="" id="" />
+                                </div>
+                                <div class="col-md-6 p-3">
+                                    <input required placeholder="E-mail" type="email" name="" id="" />
+                                </div>
+                                <div class="col-md-6 p-3">
+                                    <input required placeholder="phone" type="tel" name="" id="" />
+                                </div>
+                                <div class="col-md">
+                                    <textarea name="" placeholder="write your message (Optional)" id="" cols="30"
+                                        rows="1"></textarea>
+                                </div>
+                                <div class="text-end mt-4">
+                                    <input class="btn px-4 py-3 btn-outline-dark" type="submit" value="Send Message" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 col-md-12 text-white aside px-4 py-5">
+                            <div class="mb-5">
+                                <h1 class="h3">Contact Information</h1>
+                                <p class="opacity-50">
+                                    <small>
+                                        Fill out the from and we will get back to you whitin 24 hours
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column px-0">
+                                <ul class="m-0 p-0">
+                                    <li class="d-flex justify-content-start align-items-center mb-4">
+                                        <span class="opacity-50 d-flex align-items-center me-3 fs-2">
+                                            <ion-icon name="call"></ion-icon>
+                                        </span>
+                                        <span>+91 43 1234 1234</span>
+                                    </li>
+                                    <li class="d-flex align-items-center r mb-4">
+                                        <span class="opacity-50 d-flex align-items-center me-3 fs-2">
+                                            <ion-icon name="mail"></ion-icon>
+                                        </span>
+                                        <span>Help@contact.com</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center mb-4">
+                                        <span class="opacity-50 d-flex align-items-center me-3 fs-2">
+                                            <ion-icon name="pin"></ion-icon>
+                                        </span>
+                                        <span> A-23, Opp Park (Gopeshwar Mahadev Temple), Reliance Fresh Lane, New
+                                            Sanganer Road
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- end contact section  -->
+
+
+        <!-- start post section  -->
+        <section id="post" class="mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="fw-bold text-center mb-1 mt-5">Post</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col wow animate__animated animate__backInLeft">
+                            <div class="card">
+                                <img src="images/img-3.webp" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Discover today</h5>
+                                    <p class="card-text">Inspiring patient stories, virtual care
+                                        options, wellness guidance. Your source for uplifting hospital updates and
+                                        health insights.</p>
+                                    <button class="btn btn-outline-primary">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card wow animate__animated animate__backInDown">
+                                <img src="images/img4.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Today at the Hospital</h5>
+                                    <p class="card-text">Patient testimonials, virtual care
+                                        benefits, wellness wisdom. Your daily dose of health and healing.</p>
+                                    <button class="btn btn-outline-primary">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card animate__animated animate__backInRight">
+                                <img src="images/img1.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stay Updated</h5>
+                                    <p class="card-text">Patient spotlights, virtual care advantages,
+                                        wellness essentials. Your daily dose of hospital news and holistic health.</p>
+                                    <button class="btn btn-outline-primary">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end post section  -->
+
+
+        <!-- footer  -->
+
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h5><img src="images/logo.png" alt=""></h5>
+
+                <p class="footer-links">
+                    <a href="#home" class="link-1">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#facility">Facility</a>
+                    <a href="#review">Review</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#post">Post</a>
+                </p>
+                <p class="footer-company-name text-light">MediCare.com © 2023</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p>A-23, Opp Park ( Mahadev Temple)</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+91 242422 6363</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">medicare@support.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about text-light">
+                    <span>About the company</span>
+                    Leading healthcare institution, compassionate experts, advanced treatments, patient-centric care.
+                    Your trusted partner for a healthier, brighter future.
+                </p>
+
+                <div class="footer-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- end of footer  -->
+    </div>
+
+
+
+
+
+    <!-- bootstrap script cdn link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- main js link  -->
+    <script src=" script.js"></script>
+</body>
+
+</html>
